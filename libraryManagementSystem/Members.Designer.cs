@@ -45,7 +45,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(79, 65);
+            this.label1.Location = new System.Drawing.Point(185, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(107, 37);
             this.label1.TabIndex = 1;
@@ -55,7 +55,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(66, 177);
+            this.label4.Location = new System.Drawing.Point(67, 147);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(120, 31);
             this.label4.TabIndex = 4;
@@ -65,7 +65,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(84, 236);
+            this.label5.Location = new System.Drawing.Point(85, 206);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(102, 31);
             this.label5.TabIndex = 5;
@@ -73,26 +73,26 @@
             // 
             // memberNametextBox
             // 
-            this.memberNametextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.memberNametextBox.Location = new System.Drawing.Point(202, 177);
+            this.memberNametextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.memberNametextBox.Location = new System.Drawing.Point(203, 147);
             this.memberNametextBox.Name = "memberNametextBox";
-            this.memberNametextBox.Size = new System.Drawing.Size(215, 31);
+            this.memberNametextBox.Size = new System.Drawing.Size(215, 35);
             this.memberNametextBox.TabIndex = 7;
             // 
             // contactNotextBox
             // 
-            this.contactNotextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.contactNotextBox.Location = new System.Drawing.Point(202, 236);
+            this.contactNotextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.contactNotextBox.Location = new System.Drawing.Point(203, 206);
             this.contactNotextBox.Name = "contactNotextBox";
-            this.contactNotextBox.Size = new System.Drawing.Size(215, 31);
+            this.contactNotextBox.Size = new System.Drawing.Size(215, 35);
             this.contactNotextBox.TabIndex = 8;
             // 
             // memberGridView
             // 
             this.memberGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.memberGridView.Location = new System.Drawing.Point(468, 19);
+            this.memberGridView.Location = new System.Drawing.Point(436, 19);
             this.memberGridView.Name = "memberGridView";
-            this.memberGridView.Size = new System.Drawing.Size(305, 402);
+            this.memberGridView.Size = new System.Drawing.Size(337, 402);
             this.memberGridView.TabIndex = 9;
             // 
             // pictureBox1
@@ -105,26 +105,29 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(271, 329);
+            this.button2.Location = new System.Drawing.Point(287, 329);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(114, 40);
             this.button2.TabIndex = 25;
             this.button2.Text = "Göster";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(90, 329);
+            this.button1.Location = new System.Drawing.Point(91, 329);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(117, 40);
             this.button1.TabIndex = 24;
             this.button1.Text = "Veri Ekle";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Members
             // 

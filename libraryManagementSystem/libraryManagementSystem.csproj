@@ -82,7 +82,9 @@
     <Compile Include="Members.Designer.cs">
       <DependentUpon>Members.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\kitapveri.cs" />
     <Compile Include="Models\login.cs" />
+    <Compile Include="Models\memberveri.cs" />
     <Compile Include="Models\register.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

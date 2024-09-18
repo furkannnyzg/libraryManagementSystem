@@ -47,10 +47,36 @@ namespace libraryManagementSystem
             dragging = false;
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void cıkısYap_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            var result=MessageBox.Show("Çıkış Yapmak İstediğinize Emin Misiniz?","Form'dan çıkış yapılıyor.",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
 
+            if (result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+           Members member =new Members();
+            member.Show();
+            Hide();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Books book = new Books();
+
+            book.Show();
+            Hide();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Loan odunc = new Loan(); 
+            odunc.Show();
+            Hide();
         }
     }
 }

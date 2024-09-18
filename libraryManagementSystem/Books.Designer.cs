@@ -49,7 +49,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(61, 61);
+            this.label1.Location = new System.Drawing.Point(170, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(126, 37);
             this.label1.TabIndex = 2;
@@ -132,8 +132,9 @@
             this.booksGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.booksGridView.Location = new System.Drawing.Point(443, 12);
             this.booksGridView.Name = "booksGridView";
-            this.booksGridView.Size = new System.Drawing.Size(345, 414);
+            this.booksGridView.Size = new System.Drawing.Size(671, 414);
             this.booksGridView.TabIndex = 20;
+            this.booksGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.booksGridView_CellContentClick);
             // 
             // pictureBox1
             // 
@@ -145,33 +146,36 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(90, 372);
+            this.button1.Location = new System.Drawing.Point(86, 356);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(117, 40);
             this.button1.TabIndex = 22;
             this.button1.Text = "Veri Ekle";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(271, 372);
+            this.button2.Location = new System.Drawing.Point(268, 356);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(114, 40);
             this.button2.TabIndex = 23;
             this.button2.Text = "Göster";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Books
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1134, 450);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);

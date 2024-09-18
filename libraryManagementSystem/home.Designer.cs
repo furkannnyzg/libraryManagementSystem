@@ -32,11 +32,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.cıkısYap = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -82,17 +81,6 @@
             this.label5.TabIndex = 7;
             this.label5.Text = "Ödünç Sistemi";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label6.Location = new System.Drawing.Point(756, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(32, 31);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "X";
-            this.label6.Click += new System.EventHandler(this.label6_Click);
-            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::libraryManagementSystem.Properties.Resources.loan;
@@ -102,6 +90,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pictureBox2
             // 
@@ -112,6 +101,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
@@ -122,16 +112,18 @@
             this.pictureBox1.Size = new System.Drawing.Size(197, 179);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // label2
+            // cıkısYap
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.Location = new System.Drawing.Point(625, 377);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 31);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Çıkış Yap";
+            this.cıkısYap.AutoSize = true;
+            this.cıkısYap.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.cıkısYap.Location = new System.Drawing.Point(625, 377);
+            this.cıkısYap.Name = "cıkısYap";
+            this.cıkısYap.Size = new System.Drawing.Size(129, 31);
+            this.cıkısYap.TabIndex = 9;
+            this.cıkısYap.Text = "Çıkış Yap";
+            this.cıkısYap.Click += new System.EventHandler(this.cıkısYap_Click);
             // 
             // home
             // 
@@ -139,8 +131,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(799, 445);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.cıkısYap);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -172,7 +163,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label cıkısYap;
     }
 }
