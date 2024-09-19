@@ -83,6 +83,7 @@
       <DependentUpon>Members.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\kitapveri.cs" />
+    <Compile Include="Models\loanaddc.cs" />
     <Compile Include="Models\login.cs" />
     <Compile Include="Models\memberveri.cs" />
     <Compile Include="Models\register.cs" />
